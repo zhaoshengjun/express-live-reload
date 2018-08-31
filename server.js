@@ -19,9 +19,7 @@ const SCRIPT = `<script>
 app.use(/\/index|\/|/, (req, res) => {
     let file = readFileSync("./index.html");
     let doc = cheerio.load(file);
-    console.log("before:", doc.html());
     doc("body").append(SCRIPT);
-    console.log("after:", doc.html());
     res.send(doc.html());
 });
 app.use(express.static(__dirname));
