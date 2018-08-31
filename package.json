@@ -9,6 +9,8 @@
     "dev": "npm-run-parallel dev:reload dev:server"
   },
   "devDependencies": {
-    "express": "^4.16.3"
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.3",
+    "livereload": "^0.7.0"
   }
 }
