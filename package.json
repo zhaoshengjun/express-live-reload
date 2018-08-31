@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "dev:reload": "livereload ./",
+    "dev:server": "node server.js",
+    "dev": "npm-run-parallel dev:reload dev:server"
+  },
   "devDependencies": {
     "express": "^4.16.3"
   }
